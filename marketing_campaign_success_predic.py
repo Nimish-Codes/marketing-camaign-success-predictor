@@ -67,12 +67,12 @@ def predict_success_percent(num_ads, Impressions, age_group, gender, Clicks, Spe
 st.title('Ad Success Prediction')
 
 # User inputs
-num_ads = st.slider('Number of Ads', min_value=1, max_value=10, value=5)
+num_ads = st.slider('Number of Ads run on different platforms', min_value=1, max_value=10, value=5)
 Impressions = st.number_input('Impressions', value=10000)
-age_group = st.selectbox('Age Group', options=['30-34', '35-39', '40-44', '45-49'])
-gender = st.radio('Gender', options=['M', 'F'])
-Clicks = st.number_input('Clicks', value=200)
-Spent = st.number_input('Spent', value=1000)
+age_group = st.multiselect('Target Age Groups', options=['30-34', '35-39', '40-44', '45-49'])
+gender = st.multiselect('Target Genders', options=['M', 'F'])
+Clicks = st.number_input('Total Clicks', value=200)
+Spent = st.number_input('Money spent on Ad run', value=1000)
 
 # Prediction
 if st.button('Predict Success Percent'):
