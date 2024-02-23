@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 
 # Load dataset
-data = pd.read_csv("/content/drive/MyDrive/nk_projecs./KAG_conversion_data.csv")
+data = pd.read_csv("KAG_conversion_data.csv")
 
 data.dropna(inplace=True)
 
