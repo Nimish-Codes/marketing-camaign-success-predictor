@@ -70,7 +70,7 @@ st.title('Ad Success Prediction')
 num_ads = st.slider('Number of Ads run on different platforms', min_value=1, max_value=10, value=5)
 Impressions = st.number_input('Impressions', value=10000)
 age_group = st.multiselect('Target Age Groups', options=['30-34', '35-39', '40-44', '45-49'])
-gender = st.multiselect('Target Genders', options=['M', 'F'])
+gender = st.radio('Target Genders', options=['M', 'F'])
 Clicks = st.number_input('Total Clicks', value=200)
 Spent = st.number_input('Money spent on Ad run', value=1000)
 
